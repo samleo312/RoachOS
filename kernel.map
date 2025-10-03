@@ -1,0 +1,32 @@
+             VMA              LMA     Size Align Out     In      Symbol
+               0                0 40000000     1 . = 0x40000000
+        40000000         40000000     2018  2048 .text
+        40000000         40000000      150    16         src/main.o:(.text)
+        40000000         40000000        0     1                 $x.0
+        40000000         40000000      150     1                 kernel_main
+        40000150         40000150      120    16         src/uart.o:(.text)
+        40000150         40000150        0     1                 $x.0
+        40000150         40000150       3c     1                 uart_init
+        40000190         40000190       28     1                 uart_putc
+        400001c0         400001c0       4c     1                 uart_puts
+        40000210         40000210       24     1                 uart_getc
+        40000240         40000240       30     1                 uart_trygetc
+        40000800         40000800     1818  2048         src/start.o:(.text)
+        40000800         40000800        0     1                 $x.0
+        40000800         40000800        0     1                 _start
+        40000824         40000824        0     1                 hang
+        40001000         40001000        0     1                 _stack_top
+        40001000         40001000        0     1                 $d.1
+        40002018         40002018       24     1 .rodata
+        40002018         40002018       24     1         <internal>:(.rodata.str1.1)
+        4000203c         4000203c        0     1 .bss
+        4000203c         4000203c        0     1         __bss_start = .
+        4000203c         4000203c        0     1         __bss_end = .
+               0                0       42     1 .comment
+               0                0       42     1         <internal>:(.comment)
+               0                0      1f8     8 .symtab
+               0                0      1f8     8         <internal>:(.symtab)
+               0                0       37     1 .shstrtab
+               0                0       37     1         <internal>:(.shstrtab)
+               0                0       a0     1 .strtab
+               0                0       a0     1         <internal>:(.strtab)
